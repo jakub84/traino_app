@@ -3,9 +3,17 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'traino-app',
-    environment,
+    environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase:{ 
+      apiKey: "AIzaSyDga2vuhNJebm7p_kRqqNRplCkIeX_SZMI",
+      authDomain: "trainoapp-42ea7.firebaseapp.com",
+      databaseURL: "https://trainoapp-42ea7.firebaseio.com",
+      projectId: "trainoapp-42ea7",
+      storageBucket: "trainoapp-42ea7.appspot.com",
+      messagingSenderId: "132177093593"
+  },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

@@ -1,0 +1,35 @@
+{{!-- {{outlet}} --}}
+
+<header class="app-header">
+    <div class="logo-container">
+        {{#link-to 'trainings'}}
+        <img src="assets/trainoapp_logo.svg" alt="Traino logo">
+        {{/link-to}}
+    </div>
+    <div class="buttons-container">
+
+        {{#link-to 'add-training' class="btn-header"}}
+        <img src="assets/ic_add_circle_24px.svg" alt="button">
+        <span>Add new</span>
+        {{/link-to}}
+        {{#link-to 'add-training' class="btn-header"}}
+        <img src="assets/delete.svg" alt="button">
+        <span>Delete All</span>
+        {{/link-to}}
+    </div>
+</header>
+<div class="container-app">
+    <form class="app-form">
+        <h2>Add new training</h2>
+        <div class="form-group">
+            {{input type="text" value=title placeholder="Add new"}}
+            {{input type="date" value=date}}
+        </div>
+
+        <div class="form-group">
+            {{textarea value=description placeholder="Description.."}}
+        </div>
+        <button {{action 'addTraining'}} class="btn submit">Submit</button>
+
+    </form>
+</div>

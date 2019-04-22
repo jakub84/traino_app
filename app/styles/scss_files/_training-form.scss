@@ -1,0 +1,63 @@
+.app-form {
+    margin: 0 auto;
+    // background-color: red;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    .form-group {
+        
+        width: 100%;
+        // padding: 0 20px;
+        // background-color: red;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        label {
+            margin-right: 10px;
+        }
+        input,textarea {
+            padding: 20px;
+            border-radius:5px;
+            border:1px solid rgb(219, 219, 219);
+            outline: none;
+            &::placeholder {
+                font-size: 14px;
+                color: rgb(175, 175, 175);
+            }
+            &:focus {
+               border: 1px solid #2895DE;
+            }
+        }
+
+
+
+        input {
+            width: 65%;
+            // height: 40px;
+            
+        }
+        textarea {
+            width: 100%;
+            min-width: 200px;
+        }
+
+        input[type="date"]{
+            width: 30%;
+            &::-webkit-datetime-edit-month-field,
+            &::-webkit-datetime-edit-day-field,
+            &::-webkit-datetime-edit-year-field {
+                font-size: 14px;
+                color: rgb(175, 175, 175);
+              }
+            }
+    }
+}

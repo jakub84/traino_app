@@ -7,7 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('trainings');
+  this.route('trainings', {path:'/'});
+  this.route('add-training');
 });
 
 export default Router;
