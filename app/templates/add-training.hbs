@@ -8,13 +8,9 @@
     </div>
     <div class="buttons-container">
 
-        {{#link-to 'add-training' class="btn-header"}}
-        <img src="assets/ic_add_circle_24px.svg" alt="button">
-        <span>Add new</span>
-        {{/link-to}}
-        {{#link-to 'add-training' class="btn-header"}}
-        <img src="assets/delete.svg" alt="button">
-        <span>Delete All</span>
+        {{#link-to 'trainings' class="btn-header"}}
+        <img src="assets/back.svg" alt="button">
+        <span>Back</span>
         {{/link-to}}
     </div>
 </header>
@@ -29,7 +25,7 @@
         <div class="form-group">
             {{textarea value=description placeholder="Description.."}}
         </div>
-        <button disabled={{isDisabled}} {{action 'addTraining'}} class="btn submit">Submit</button>
+        <button disabled={{isDisabled}} {{action 'addTraining' trainings}} class="btn submit">Submit</button>
 
     </form>
 </div>

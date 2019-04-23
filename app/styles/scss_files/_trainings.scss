@@ -1,0 +1,40 @@
+.container-app {
+
+    .trainig-container {
+        background-color: #fff;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0px 3px 6px #70707042;
+        border-radius: 5px;
+
+        h3 {
+            font-size: 20px;
+            color: #707070;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+        footer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                font-size: 12px;
+                font-weight: 300px;
+                color: #bdbcbc;
+            }
+            .buttons-container {
+
+            }
+
+        }
+ 
+    }
+}

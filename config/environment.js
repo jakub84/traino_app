@@ -7,13 +7,19 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     firebase:{ 
-      apiKey: "AIzaSyDga2vuhNJebm7p_kRqqNRplCkIeX_SZMI",
-      authDomain: "trainoapp-42ea7.firebaseapp.com",
-      databaseURL: "https://trainoapp-42ea7.firebaseio.com",
-      projectId: "trainoapp-42ea7",
-      storageBucket: "trainoapp-42ea7.appspot.com",
-      messagingSenderId: "132177093593"
+      apiKey: "AIzaSyB_IRiWr1gTa-jx6QjfauJIg1QXPgONwpM",
+      authDomain: "traino-9c081.firebaseapp.com",
+      databaseURL: "https://traino-9c081.firebaseio.com",
+      projectId: "traino-9c081",
+      storageBucket: "traino-9c081.appspot.com",
+      messagingSenderId: "222254817747"
   },
+      // if using ember-cli-content-security-policy
+      contentSecurityPolicy: {
+        'script-src': "'self' 'unsafe-eval' apis.google.com",
+        'frame-src': "'self' https://*.firebaseapp.com",
+        'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+      },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

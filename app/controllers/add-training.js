@@ -12,13 +12,14 @@ export default Controller.extend({
             const title = this.get('title')
             const date = this.get('date')
             const description = this.get('description')
-            const newTrainigs = this.store.createRecord('training', {title:title},{date:date},{description:description})
-            newTrainigs.save()
-
+            const newTrainigs = this.store.createRecord('training', {title,date,description})
+            newTrainigs.save(),
 
             this.set('title', '')
             this.set('date', '')
             this.set('description', '')
+            this.transitionToRoute('trainings');
+
         }
 
     }
