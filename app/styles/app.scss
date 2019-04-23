@@ -28,6 +28,14 @@ body * {
     &.submit {
         background-color: $main-color;
         color:#fff;
+        &:disabled {
+            background-color: rgb(224, 224, 224);
+            color:rgb(163, 163, 163);
+            cursor: not-allowed;
+        &:hover {
+            letter-spacing: 0;
+        }
+        }
     }
     &:hover {
         letter-spacing: 2px;

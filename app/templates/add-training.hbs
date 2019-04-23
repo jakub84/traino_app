@@ -29,7 +29,7 @@
         <div class="form-group">
             {{textarea value=description placeholder="Description.."}}
         </div>
-        <button {{action 'addTraining'}} class="btn submit">Submit</button>
+        <button disabled={{isDisabled}} {{action 'addTraining'}} class="btn submit">Submit</button>
 
     </form>
 </div>

@@ -1,26 +1,25 @@
 import Controller from '@ember/controller';
-
+import { empty } from '@ember/object/computed';
 export default Controller.extend({
+    title: '',
+    date: '',
+    description: '',
+    isDisabled: empty('title') && empty('date') && empty('description'),
     actions: {
-        addTraining: function(){
-            let title = this.get('title')
-            let date = this.get('date')
-            let description = this.get('description')
-            console.log(title,date,description)
 
-            let newTraining = this.store.createRecord('training', {
-                // title: title,
-                // date: new Date(date),
-                // description: description
-            })
+        addTraining() {
 
-            newTraining.save();
+            const title = this.get('title')
+            const date = this.get('date')
+            const description = this.get('description')
+            const newTrainigs = this.store.createRecord('training', {title:title},{date:date},{description:description})
+            newTrainigs.save()
 
-            this.setProperties({
-                title: '',
-                description:'',
-                date:''
-            })
+
+            this.set('title', '')
+            this.set('date', '')
+            this.set('description', '')
         }
+
     }
 });
