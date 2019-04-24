@@ -6,6 +6,17 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    'ember-google-maps': {
+      key: 'AIzaSyDxlc8MY5vnRcFik2Ke6dK45gVMseDDsGc', // Using .env files in this example
+      language: 'en',
+      region: 'GB',
+      protocol: 'https',
+      version: '3.35',
+      libraries: ['geometry', 'places'], // Optional libraries
+      // client: undefined,
+      // channel: undefined,
+      // baseUrl: '//maps.googleapis.com/maps/api/js'
+    },
     firebase:{ 
       apiKey: "AIzaSyB_IRiWr1gTa-jx6QjfauJIg1QXPgONwpM",
       authDomain: "traino-9c081.firebaseapp.com",
