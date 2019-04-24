@@ -14,16 +14,16 @@
 </header>
 <div class="container-app">
     <form class="app-form">
-        <h2>Add new training</h2>
-        <div class="form-group">
-            {{input type="text" value=model.title placeholder="Title"}}
-            {{input type="date" value=model.date}}
+        <h2>Edit profile</h2>
+        <div class="form-group-edit-profile">
+            {{input type="text" value=model.name placeholder="Name"}}
+            {{input type="text" value=model.mail placeholder="mail"}}
         </div>
-
-        <div class="form-group">
-            {{textarea value=model.description placeholder="Description.."}}
+        <div class="form-group-edit-profile">
+            {{input type="text" value=model.phone placeholder="phone"}}
+            {{input type="text" value=model.address placeholder="adress"}}
         </div>
-        <button  {{action 'addTraining' model}} class="btn submit">Submit</button>
+        <button {{action 'updateProfile' model}} class="btn submit">Save</button>
 
     </form>
 </div>

@@ -6,23 +6,26 @@
         <div class="avatar-container">
             <img src="assets/avatar_user@2x.png" alt="avatar">
         </div>
-        <h3>Aneta</h3>
+       
+        <h3>{{model.name}}</h3>
+      
         <div class="details-container">
             <div class="mail-container">
                 <img src="assets/ic_email_24px.svg" alt="mail">
-                <p>aneta.koksa@gmail.com</p>
+                <p>{{model.mail}}</p>
             </div>
 
             <div class="phone-container">
                 <img src="assets/ic_call_end_24px.svg" alt="mail">
-                <p>787 445 500</p>
+                <p>{{model.phone}}</p>
             </div>
 
             <div class="location-container">
                 <img src="assets/ic_location_on_24px.svg" alt="mail">
                 <div class="address">
-                    <p>Ul. Jana Pawła 32</p> <br />
-                    <p>73-456 Warszawa</p>
+                    {{!-- <p>Ul. Jana Pawła 32</p> <br />
+                    <p>73-456 Warszawa</p> --}}
+                   <p> {{model.address}}</p>
             </div>    
                 </div>
                  <div class="google-map">
@@ -32,8 +35,8 @@
 
             
         </div>
-
-        <a href="#" class="btn edit">Edit</a>
+        
+        {{#link-to 'trainings.profile-edit' class='btn edit'}}Edit{{/link-to}}
     </div>
 
 

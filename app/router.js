@@ -13,6 +13,8 @@ Router.map(function() {
   });
   this.route('trainings.new',{path:'new'})
   this.route('trainings.edit',{path: ':training_id'})
+  this.route('trainings.profile-edit',{path:'profile-edit'})
+
  
 });
 

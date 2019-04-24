@@ -88,4 +88,61 @@
             }
             }
     }
+    .form-group-edit-profile {
+        
+        width: 100%;
+        // padding: 0 20px;
+        // background-color: red;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 700px) {
+            flex-direction: column;
+            margin-bottom: 0;
+            input,textarea {
+                margin:10px;
+                width: 100%;
+            }
+            label {
+                margin-right: 0;
+            }
+
+            
+        }
+        label {
+            margin-right: 10px;
+        }
+        input {
+            
+            padding: 16px;
+            border-radius:5px;
+            border:1px solid rgb(219, 219, 219);
+            outline: none;
+            color:#707070;
+            font-size: 20px;
+            &::placeholder {
+                font-size: 14px;
+                color: rgb(175, 175, 175);
+            }
+            &:focus {
+               border: 1px solid #2895DE;
+            }
+        }
+
+
+
+        input {
+            width: 49%;
+            // height: 40px;
+            
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+            
+        }
+        
+    }
 }
