@@ -1,11 +1,18 @@
 import Controller from '@ember/controller';
 
 export default Controller.extend({
+
     actions: {
-        delteTraining() {
+        // deleteTraining() {
 
-            deleteRecord();
+        //     console.log("delete")
+        //     training.destroyRecord();
 
+
+        // },
+        editTraining(training) {
+
+            console.log("edit")
         }
     }
 });

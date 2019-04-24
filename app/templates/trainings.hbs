@@ -6,38 +6,11 @@
     </div>
     <div class="buttons-container">
 
-        {{#link-to 'add-training' class="btn-header"}}
+        {{#link-to 'trainings.new' class="btn-header"}}
         <img src="assets/ic_add_circle_24px.svg" alt="button">
         <span>Add new</span>
         {{/link-to}}
-        {{!-- {{#link-to 'add-training' class="btn-header"}}
-        <img src="assets/delete.svg" alt="button">
-        <span>Delete All</span>
-        {{/link-to}} --}}
     </div>
 </header>
 
-<div class="container-app">
-    {{!-- <h2>Trainings</h2> --}}
-
-    {{#each model as |training|}}
-    
-    <div class="trainig-container">
-        <h3>{{training.title}}</h3>
-        <p>{{training.description}}</p>
-        <footer>
-            <span>{{training.date}}</span>
-            <div class="buttons-container">
-            
-                 <button  {{action 'editTraining' trainings}} class="btn edit blue">Edit</button>
-                 <button  {{action 'delteTraining' trainings}} class="btn edit red">Delete</button>
-            </div>
-        </footer>
-        
-    </div>
-        
-        
-        
-    
-    {{/each}}
-</div>
+{{outlet}}
