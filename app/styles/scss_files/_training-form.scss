@@ -10,6 +10,9 @@
         font-size: 40px;
         margin-bottom: 30px;
         text-transform: uppercase;
+        @media (max-width: 500px) {
+            text-align: center;
+        }
     }
     .form-group {
         
@@ -21,6 +24,20 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 700px) {
+            flex-direction: column;
+            margin-bottom: 0;
+            input,textarea {
+                margin:10px;
+                width: 100%;
+            }
+            label {
+                margin-right: 0;
+            }
+
+            
+        }
         label {
             margin-right: 10px;
         }
@@ -46,12 +63,16 @@
             width: 65%;
             // height: 40px;
             
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+            
         }
         textarea {
             width: 100%;
             min-width: 200px;
-            height: 200px;
-            line-height: 20px;
+            height: 250px;
+            line-height: 24px;
         }
 
         input[type="date"]{
@@ -62,6 +83,9 @@
                 font-size: 12px;
                 color: rgb(175, 175, 175);
               }
+              @media (max-width: 700px) {
+                width: 100%;
+            }
             }
     }
 }

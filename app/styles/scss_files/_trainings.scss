@@ -23,14 +23,27 @@
         footer {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
+            @media (max-width: 500px) {
+                flex-direction: column;
+                align-items: center;
+             }
             span {
                 font-size: 12px;
                 font-weight: 300px;
                 color: #bdbcbc;
             }
             .buttons-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                // align-items: center;
+                @media (max-width: 500px) {
+                    flex-direction: column;
+                    align-items: center;
+                 }
 
             }
 

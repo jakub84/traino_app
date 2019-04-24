@@ -9,11 +9,11 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('trainings', {path:'/'}, function() {
-   
-    // this.route('edit',{path: '/training_id/edit:'})
+    
   });
   this.route('trainings.new',{path:'new'})
-  // this.route('add-training');
+  this.route('trainings.edit',{path: ':training_id'})
+ 
 });
 
 export default Router;

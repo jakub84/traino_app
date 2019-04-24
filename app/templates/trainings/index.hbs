@@ -12,9 +12,8 @@
         <footer>
             <span>{{training.date}}</span>
             <div class="buttons-container">
-            
-                 <button  {{action 'editTraining' trainings}} class="btn edit blue">Edit</button>
-                 <button  {{action 'deleteTraining' trainings}} class="btn edit red">Delete</button>
+            {{#link-to 'trainings.edit' training.id class='btn edit blue'}}Edit{{/link-to}}
+                 <button  {{action 'deleteTraining' training}} class="btn edit red">Delete</button>
             </div>
         </footer>
         

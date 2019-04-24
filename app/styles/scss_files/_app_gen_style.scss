@@ -9,20 +9,34 @@
     border-top: 10px solid $main-color;
     border-bottom: 10px solid $main-color;
     background-color: #F1F1F1;
+    @media (max-width: 800px) {
+        flex-direction: column;
+        overflow: none;
+        height: auto;
+    }
 
     .profile-container {
         height: 100vh;
         overflow-y: scroll;
         width: 25%;
-        min-width: 200px;
+        // min-width: 350px;
         background-color: $main-color;
         padding: 30px;
         display: flex;
         flex-direction: column;
+        
         color: $text-color-profile;
         justify-content: flex-start;
         align-items: center;
         // overflow: auto;
+
+        @media (max-width: 800px) {
+            overflow-y: none;
+            height: unset;
+            width: 100%;
+            order: 1;
+            
+        }
 
         &::-webkit-scrollbar {
             width: 5px;
@@ -35,7 +49,9 @@
             outline: 1px solid slategrey;
         } 
 
-
+        @media (max-width: 1000px) {
+            min-width: 270px;
+        }
 
         h2 {
             font-size: 37px;
@@ -54,6 +70,7 @@
 
         .details-container {
             margin-top: 40px;
+            width: 100%;
 
             &>div {
                 display: flex;
@@ -62,6 +79,9 @@
                 align-content: center;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.178);
                 padding: 30px 0;
+                @media (max-width: 800px) {
+                    justify-content: center;
+                }
 
                 &>img {
                     margin-right: 10px;
@@ -73,10 +93,22 @@
             }
 
             .location-container {
+                display: flex;
+                flex-direction: row;
                 align-items: flex-start;
 
+                .address {
+                    
+
+                }
                 .google-map {
+                    text-align: center;
                     margin-top: 30px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        margin-right: 0;
+                    }
                 }
             }
 
@@ -90,7 +122,11 @@
         padding: 30px;
         max-width: 1100px;
         margin:0 auto;
-       
+        @media (max-width: 800px) {
+           overflow: auto;
+           width: 100%;
+           height: auto;
+        }
         
         &::-webkit-scrollbar {
             width: 5px;
@@ -108,8 +144,14 @@
             width: 100%;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-between;
             margin-bottom: 50px;
+            @media (max-width: 500px) {
+                flex-direction: column;
+                align-items: center;
+             }
+            
             &> .buttons-container {
                 display: flex;
                 flex-direction: row;
