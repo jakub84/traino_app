@@ -5,6 +5,7 @@ export default DS.Model.extend({
     mail: DS.attr('string'),
     phone: DS.attr('string'),
     address: DS.attr('string'),
+    gender: DS.attr('string')
 
 
 

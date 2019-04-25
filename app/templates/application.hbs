@@ -1,8 +1,10 @@
 <div class="container">
     <div class="profile-container">
         <h2>Profile</h2>
-        <div class="avatar-container">
+        <div class="profile-avatar-container">
+           
             <img src="assets/avatar_user@2x.png" alt="avatar">
+           
         </div>
 
         <h3>{{model.name}}</h3>
@@ -28,11 +30,9 @@
             </div>
             <div class="google-map">
                {{g-map lat="52.179100" lng="21.072728" zoom=17}}
-               {{g.marker
-      lat="52"
-      lng="21"
-      draggable=true
-      }}
+                    {{!-- {{g.marker lat="52" lng="21" onClick=(action 'showDetails' l)}} --}}
+
+          
             </div>
 
 

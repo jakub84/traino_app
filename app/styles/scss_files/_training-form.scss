@@ -99,9 +99,45 @@
         justify-content: space-between;
         align-items: center;
 
-        @media (max-width: 700px) {
+        fieldset {
+            display: flex;
+            font-size: 12px;
             flex-direction: column;
+            color:rgb(129, 129, 129);
+            // background-color: red;
+            margin: 0 10px;
+            width: 100%;
+            input {
+                width: 100%;
+                padding: 16px;
+                border-radius:5px;
+                border:1px solid rgb(219, 219, 219);
+                outline: none;
+                color:#707070;
+                font-size: 20px;
+                &::placeholder {
+                    font-size: 14px;
+                    color: rgb(175, 175, 175);
+                }
+                &:focus {
+                   border: 1px solid #2895DE;
+                }
+                @media (max-width: 700px) {
+                    width: 100%;
+                }
+            }
+        }
+     
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+            justify-items: center;
             margin-bottom: 0;
+            fieldset {
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 30px;
+            }
             input,textarea {
                 margin:10px;
                 width: 100%;
@@ -113,36 +149,9 @@
             
         }
         label {
-            margin-right: 10px;
+            margin-bottom: 10px;
         }
-        input {
-            
-            padding: 16px;
-            border-radius:5px;
-            border:1px solid rgb(219, 219, 219);
-            outline: none;
-            color:#707070;
-            font-size: 20px;
-            &::placeholder {
-                font-size: 14px;
-                color: rgb(175, 175, 175);
-            }
-            &:focus {
-               border: 1px solid #2895DE;
-            }
-        }
-
-
-
-        input {
-            width: 49%;
-            // height: 40px;
-            
-        @media (max-width: 700px) {
-            width: 100%;
-        }
-            
-        }
+   
         
     }
 }

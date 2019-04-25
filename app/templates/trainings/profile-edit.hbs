@@ -16,12 +16,31 @@
     <form class="app-form">
         <h2>Edit profile</h2>
         <div class="form-group-edit-profile">
-            {{input type="text" value=model.name placeholder="Name"}}
-            {{input type="text" value=model.mail placeholder="mail"}}
+{{!-- <fieldset>
+            <select onchange={{action "setSelection" value="model.gender"}} >
+ <option> Gender </option>
+    <option value="Mr">Mr</option>
+    <option value="Ms">Ms</option>
+</select>
+</fieldset> --}}
+            <fieldset>
+                <label for="name">Name</label>
+                {{input type="text" id="name" value=model.name placeholder="Name"}}
+            </fieldset>
+            <fieldset>
+                <label for="mail">Mail</label>
+                {{input type="text" id="mail" value=model.mail placeholder="mail"}}
+            </fieldset>
         </div>
         <div class="form-group-edit-profile">
-            {{input type="text" value=model.phone placeholder="phone"}}
-            {{input type="text" value=model.address placeholder="adress"}}
+            <fieldset>
+                <label for="phone">Phone</label>
+                {{input type="text" id="phone" value=model.phone placeholder="phone"}}
+            </fieldset>
+            <fieldset>
+                <label for="address">Address</label>
+                {{input type="text" id="address" value=model.address placeholder="adress"}}
+            </fieldset>
         </div>
         <button {{action 'updateProfile' model}} class="btn submit">Save</button>
 
