@@ -1,29 +1,29 @@
 <header class="app-header">
-    <div class="logo-container">
-        {{#link-to 'trainings'}}
-        <img src="assets/trainoapp_logo.svg" alt="Traino logo">
-        {{/link-to}}
-    </div>
-    <div class="buttons-container">
+  <div class="logo-container">
+    {{#link-to 'trainings'}}
+    <img src="assets/trainoapp_logo.svg" alt="Traino logo">
+    {{/link-to}}
+  </div>
+  <div class="buttons-container">
 
-        {{#link-to 'trainings' class="btn-header"}}
-        <img src="assets/back.svg" alt="button">
-        <span>Back</span>
-        {{/link-to}}
-    </div>
+    {{#link-to 'trainings' class="btn-header"}}
+    <img src="assets/back.svg" alt="button">
+    <span>Back</span>
+    {{/link-to}}
+  </div>
 </header>
 <div class="container-app">
-    <form class="app-form">
-        <h2>Add new training</h2>
-        <div class="form-group">
-            {{input type="text" value=model.title placeholder="Add new"}}
-            {{input type="date" value=model.date}}
-        </div>
+  <form class="app-form">
+    <h2>Add new training</h2>
+    <div class="form-group">
+      {{input type="text" value=model.title placeholder="Add new"}}
+      {{input type="date" value=model.date}}
+    </div>
 
-        <div class="form-group">
-            {{textarea value=model.description placeholder="Description.."}}
-        </div>
-        <button  {{action 'saveTraining' model}} class="btn submit">Save Changes</button>
+    <div class="form-group">
+      {{textarea value=model.description placeholder="Description.."}}
+    </div>
+    <button {{action 'saveTraining' model}} class="btn submit">Save Changes</button>
 
-    </form>
+  </form>
 </div>
