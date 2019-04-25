@@ -1,0 +1,16 @@
+<header class="app-header">
+    <div class="logo-container">
+        {{#link-to 'trainings'}}
+        <img src="assets/trainoapp_logo.svg" alt="Traino logo">
+        {{/link-to}}
+    </div>
+    <div class="buttons-container">
+
+        {{#link-to 'trainings.new' class="btn-header"}}
+        <img src="assets/ic_add_circle_24px.svg" alt="button">
+        <span>Add new</span>
+        {{/link-to}}
+    </div>
+</header>
+
+{{outlet}}

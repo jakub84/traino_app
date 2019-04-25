@@ -1,0 +1,26 @@
+
+
+
+<div class="container-app">
+    {{!-- <h2>Trainings</h2> --}}
+
+    {{#each model as |training|}}
+    
+    <div class="trainig-container">
+        <h3>{{training.title}}</h3>
+        <p>{{training.description}}</p>
+        <footer>
+            <span>{{training.date}}</span>
+            <div class="buttons-container">
+            {{#link-to 'trainings.edit' training.id class='btn edit blue'}}Edit{{/link-to}}
+                 <button  {{action 'deleteTraining' training}} class="btn edit red">Delete</button>
+            </div>
+        </footer>
+        
+    </div>
+        
+        
+        
+    
+    {{/each}}
+</div>

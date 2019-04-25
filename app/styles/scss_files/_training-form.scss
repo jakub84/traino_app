@@ -1,0 +1,148 @@
+.app-form {
+    margin: 0 auto;
+    // background-color: red;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        @media (max-width: 500px) {
+            text-align: center;
+        }
+    }
+    .form-group {
+        
+        width: 100%;
+        // padding: 0 20px;
+        // background-color: red;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 700px) {
+            flex-direction: column;
+            margin-bottom: 0;
+            input,textarea {
+                margin:10px;
+                width: 100%;
+            }
+            label {
+                margin-right: 0;
+            }
+
+            
+        }
+        label {
+            margin-right: 10px;
+        }
+        input,textarea {
+            padding: 16px;
+            border-radius:5px;
+            border:1px solid rgb(219, 219, 219);
+            outline: none;
+            color:#707070;
+            font-size: 20px;
+            &::placeholder {
+                font-size: 14px;
+                color: rgb(175, 175, 175);
+            }
+            &:focus {
+               border: 1px solid #2895DE;
+            }
+        }
+
+
+
+        input {
+            width: 65%;
+            // height: 40px;
+            
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+            
+        }
+        textarea {
+            width: 100%;
+            min-width: 200px;
+            height: 250px;
+            line-height: 24px;
+        }
+
+        input[type="date"]{
+            width: 30%;
+            &::-webkit-datetime-edit-month-field,
+            &::-webkit-datetime-edit-day-field,
+            &::-webkit-datetime-edit-year-field {
+                font-size: 12px;
+                color: rgb(175, 175, 175);
+              }
+              @media (max-width: 700px) {
+                width: 100%;
+            }
+            }
+    }
+    .form-group-edit-profile {
+        
+        width: 100%;
+        // padding: 0 20px;
+        // background-color: red;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 700px) {
+            flex-direction: column;
+            margin-bottom: 0;
+            input,textarea {
+                margin:10px;
+                width: 100%;
+            }
+            label {
+                margin-right: 0;
+            }
+
+            
+        }
+        label {
+            margin-right: 10px;
+        }
+        input {
+            
+            padding: 16px;
+            border-radius:5px;
+            border:1px solid rgb(219, 219, 219);
+            outline: none;
+            color:#707070;
+            font-size: 20px;
+            &::placeholder {
+                font-size: 14px;
+                color: rgb(175, 175, 175);
+            }
+            &:focus {
+               border: 1px solid #2895DE;
+            }
+        }
+
+
+
+        input {
+            width: 49%;
+            // height: 40px;
+            
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+            
+        }
+        
+    }
+}

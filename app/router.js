@@ -1,5 +1,6 @@
 import EmberRouter from '@ember/routing/router';
 import config from './config/environment';
+import training from './models/training';
 
 const Router = EmberRouter.extend({
   location: config.locationType,
@@ -7,6 +8,18 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('trainings', {path:'/'}, function() {
+    
+  });
+  this.route('trainings.new',{path:'new'})
+  this.route('trainings.edit',{path: ':training_id'})
+  this.route('trainings.profile-edit',{path:'profile-edit'})
+
+ 
 });
 
 export default Router;
+
+
+
+
